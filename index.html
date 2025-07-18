@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Projeto</title>
+    <style>
+        blockquote {
+            background: #f5f5f5;
+            padding: 10px;
+            border-left: 3px solid gray;
+}
+
+    </style>
+</head>
+<body>
+    <h1 id="inicio">Primeiros Passos com HTML</h1>
+    <hr />
+    
+    <h2>ÍNDICE</h2>
+    <ul>
+        <li><a href="#historia">História dos Computadores</a></li>
+        <li><a href="#comunicacao">Comunicação Client x Server</a></li>
+        <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+        <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+        <li><a href="#tags">Tags HTML</a></li>
+        <li><a href="#midias">Mídias no HTML</a></li>
+        <li><a href="#tabelas">Tabelas em HTML</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ul>
+
+    <h2 id="história">HISTÓRIA DOS COMPUTADORES</h2>
+    <blockquote>
+    <p><i>Quando comecei a estudar sobre a evolução dos computadores, confesso que não imaginava o quão fascinante seria essa jornada. Cada etapa da história parecia uma revolução por si só, e agora, depois da explicação do curso, consigo enxergar com muito mais clareza como tudo se transformou até chegar nos dispositivos modernos que usamos hoje.</i></p>
+    </blockquote>
+    <p>No início, os computadores nem se pareciam com o que conhecemos. Eram máquinas gigantescas, como o ENIAC, que ocupavam salas inteiras e funcionavam com válvulas. Esses primeiros computadores eram lentos, caros e usados principalmente para cálculos militares e científicos. Mas mesmo assim, foram um marco — a semente da revolução digital.
+    Depois vieram os transistores, que substituíram as válvulas e tornaram os computadores menores, mais rápidos e mais confiáveis. Foi aí que percebi como a miniaturização começou a ganhar força. Com os circuitos integrados, tudo ficou ainda mais compacto e eficiente. Essa fase foi essencial para que os computadores deixassem de ser exclusivos de grandes instituições e começassem a chegar às empresas.
+    A parte que mais me empolgou foi quando os computadores pessoais começaram a surgir. A Apple, a IBM e outras empresas trouxeram os PCs para dentro das casas. E com isso, o mundo começou a mudar de verdade. As pessoas passaram a ter acesso à informação, à criação de conteúdo e à comunicação digital. Foi como abrir uma porta para um novo universo.
+    E então veio a internet. Essa parte foi como um divisor de águas. Aprendi que, com a web, os computadores deixaram de ser apenas ferramentas de trabalho e se tornaram pontes entre pessoas, culturas e ideias. A comunicação instantânea, o compartilhamento de conhecimento e a criação de comunidades online mudaram tudo.
+    Hoje, os computadores estão em nossos bolsos. Os smartphones são mais poderosos do que os computadores que levaram o homem à Lua. E com a inteligência artificial, como eu estou usando agora, a interação com a tecnologia ficou ainda mais natural e intuitiva. É impressionante pensar que tudo começou com máquinas que só faziam contas.
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <h2 id="comunicacao">COMUNICAÇÃO CLIENT X SERVER</h2>
+    <blockquote>
+    <p><i>Outro ponto marcante foi entender a <strong>comunicação entre cliente e servidor</strong>. Antes disso, eu não sabia como funcionava a troca de informações por trás de um simples clique em um site.</i></p>
+    </blockquote>
+    <p>A comunicação entre client e server acontece de forma bem rápida, quase invisível aos nossos olhos, mas segue um processo bem definido. Funciona assim:</p>
+        <ol>
+            <li>O client faz uma requisição — Por exemplo, eu digito um site e aperto "Enter".</li>
+            <li>Essa requisição vai para o servidor, através da internet.</li>
+            <li>O servidor recebe, processa o pedido e envia a resposta. Pode ser uma página HTML, um arquivo de mídia, um script etc.</li>
+            <li>O client recebe essa resposta e exibe para mim no navegador.</li>
+        </ol>
+  <p>Tudo isso é feito usando protocolos, como o <span class="highlight">HTTP</span> (ou <span class="highlight">HTTPS</span>, que é a versão segura), e toda essa troca é conhecida como <strong>modelo cliente-servidor</strong>.</p>
+  <p>Em resumo, o client pede, o server responde. E essa conversa acontece milhões de vezes por segundo em todo o mundo!</p>
+
+    <ul><h3>O são Clients?</h3></ul>
+    <p> Na minha jornada de aprendizado em desenvolvimento web, eu aprendi que <span class="highlight">"client"</span> (ou cliente) é basicamente qualquer dispositivo ou programa que solicita algo de um servidor.
+    Por exemplo, quando eu abro o navegador e digito o endereço de um site, meu navegador está atuando como um <span class="highlight">client</span>, porque ele está pedindo informações para um servidor.</p>
+    <p>Esse cliente pode ser um computador, um celular, uma TV ou até um smartwatch. Todos eles têm um navegador ou aplicativo que se conecta a servidores na internet para buscar os dados que eu quero acessar.
+    O <span class="highlight">client</span> é o ponto de partida da interação, onde eu, como usuária, faço um pedido — e esse pedido será enviado ao <span class="highlight">server</span>.</p>
+    
+    <ul><h3>O que são Servers?</h3></ul>
+    <p>Já o <span class="highlight">"server"</span> (servidor) é como o cérebro por trás da internet. É uma máquina ou sistema que <strong>recebe os pedidos do client e envia de volta uma resposta</strong>.Essa resposta pode ser uma página da web, um vídeo, uma imagem, um texto — qualquer conteúdo que esteja armazenado nele. Eu aprendi que os servidores estão sempre "ligados", prontos para receber essas requisições. Eles processam o que foi pedido e entregam as informações necessárias de volta ao client.
+    Então, quando acesso um site, o servidor me envia aquele conteúdo para que o navegador possa exibir.</p>  
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <h2 id="estruturas">ESTRUTURA BÁSICA DO HTML?</h2>
+    <blockquote>
+    <p><i> Durante o curso, aprendi que todo documento HTML segue uma estrutura básica fundamental, que serve como esqueleto para qualquer página na web. Essa estrutura é composta por elementos que indicam ao navegador o que deve ser exibido e como deve ser organizado.</i></p>
+    </blockquote>
+    <p>Logo no início do arquivo, há uma declaração especial <u>(<code>&lt;!DOCTYPE html&gt;</code>)</u> que define a versão do HTML utilizada, o que ajuda o navegador a interpretar corretamente o conteúdo. Em seguida, tudo o que será exibido na página ou que ajudará na sua construção é envolvido por uma marca principal, como se fosse a moldura que dá forma a tudo o que está por vir.</p>
+    <p>Dentro dessa estrutura, percebi que existe uma separação entre o que é essencial para o funcionamento técnico e o que será visível ao usuário. Uma parte guarda informações como o título da aba e conexões com outros arquivos — essa seção é como o cérebro silencioso da página. Já a outra parte é o corpo em si, onde estão os textos, imagens, links, listas e qualquer outro conteúdo que será mostrado diretamente na tela.</p>
+    <p>Dentro desse corpo, tudo é construído com o uso de tags, como se fossem peças de um quebra-cabeça. Cada tag tem um propósito, seja destacar um título, agrupar parágrafos ou criar listas. E mesmo sem ter decorado todas, já consigo reconhecer a importância de cada uma delas para a criação de páginas organizadas, acessíveis e compreensíveis.</p>
+    <p>No <code>&lt;<u>body</u>&gt;</code>, tudo é estruturado usando várias tags que definem diferentes tipos de conteúdo. Por exemplo, os títulos são criados com tags que vão de <code>&lt;<u>h1</u>&gt;</code> até <code>&lt;<u>h6</u>&gt;</code>, indicando diferentes níveis de hierarquia. Textos são organizados com <code>&lt;<u>p</u>&gt;</code> para parágrafos, e grupos de itens podem ser organizados em listas usando <code>&lt;<u>ul</u>&gt;</code> para listas não ordenadas ou <code>&lt;<u>ol</u>&gt;</code> para listas ordenadas.</p>
+    <p>Essa estrutura se repete em todas as páginas que eu criei, e com o tempo ela se tornou tão familiar quanto escrever uma carta — só que para o navegador interpretar e transformar em uma experiência visual para quem acessa. Entender essa base mudou completamente a forma como vejo a internet hoje</p>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <h2 id="listas">LISTAS ORDENADAS E NÃO ORDENADAS</h2>
+    <blockquote>
+    <p><i>Com o aprendizado de HTML, uma das coisas que mais me chamou atenção foi a forma como podemos organizar informações usando listas. Listas são fundamentais para estruturar conteúdos de maneira clara, facilitando a leitura e a compreensão dos usuários.</i></p>
+    </blockquote>
+    <p>Existem basicamente dois tipos principais de listas no HTML: as <strong>listas ordenadas</strong> e as <strong>listas não ordenadas</strong>.</p>
+    <ol>
+        <h3>Listas Ordenadas</h3>
+        <p><strong>Listas Ordenadas</strong> são usadas quando a sequência dos itens importa, ou seja, quando a ordem faz diferença. Por exemplo, uma lista de passos para realizar uma tarefa, um ranking, ou um conjunto de instruções que devem ser seguidas numa ordem específica. No HTML, as listas ordenadas são criadas usando a tag <code>&lt;ol&gt;</code>. Dentro dela, cada item da lista é colocado dentro da tag <code>&lt;li&gt;</code>, que significa "list item" (item de lista). O navegador automaticamente numera os itens, facilitando a visualização da sequência./p>
+        <p> Um exemplo clássico de lista ordenada pode ser uma receita de bolo, onde a ordem dos passos deve ser respeitada para o sucesso da preparação. Outra aplicação comum é a apresentação de tópicos em ordem de prioridade.</p>
+        <h3>Listas Não Ordenadas</h3>
+        <p>Já as <strong>Listas Não Ordenadas</strong> são aquelas em que a ordem dos itens não é importante. São usadas para listar elementos que podem ser apresentados em qualquer sequência, como uma lista de compras, características de um produto, ou itens relacionados. Para criar uma lista não ordenada no HTML, utilizamos a tag <code>&lt;ul&gt;</code>. Assim como nas listas ordenadas, cada item é marcado com a tag <code>&lt;li&gt;</code>. Neste caso, o navegador exibe um marcador (normalmente um círculo ou outro símbolo) ao lado de cada item, sem numeração.</p>
+        <p>As listas não ordenadas são ideais para apresentar conteúdos agrupados sem a necessidade de hierarquia, deixando a apresentação mais visualmente agradável e organizada.</p>
+    </ol> 
+    <p>Além dessas duas, também existe a possibilidade de criar listas de definição (com a tag <code>&lt;dl&gt;</code>), que são usadas para pares termo-descrição, mas as mais comuns e estudadas são as ordenadas e não ordenadas.</p>
+    <p>Aprender a usar corretamente esses dois tipos de listas é essencial para construir páginas web bem estruturadas e acessíveis. Elas ajudam a separar informações, facilitam a navegação, especialmente para leitores de tela, e tornam o conteúdo mais amigável para todos os usuários.</p>
+    <p>Ao usar listas no HTML, posso garantir que minha página ficará organizada e que quem acessa vai entender facilmente a mensagem que quero transmitir, seja seguindo uma sequência específica ou apenas vendo um grupo de informações relacionadas.</p>
+        <small><a href="#inicio">(voltar)</a></small>
+
+    <h2 id="tags">TAGS HTML</i>?</h2>
+    <blockquote>
+    <p><i>Aprender HTML é como montar um quebra-cabeça. Cada tag se encaixa em um lugar específico, e juntas, formam uma página funcional e informativa.</i></p>
+  </blockquote>
+    <p>Sobre as tags do HTML, compreendi que as tags são como <i>blocos de construção</i> fundamentais para a criação de páginas web. Elas são instruções usadas para estruturar e apresentar conteúdos em um navegador, indicando como os elementos devem ser exibidos. Cada tag possui uma <u>função específica</u>, e o navegador interpreta essas instruções para construir a interface visual da página.</p>
+    <p>As tags HTML são compostas por uma estrutura padrão: uma <abbr title="Tag de abertura e tag de fechamento">tag de abertura e uma de fechamento</abbr>, com o conteúdo entre elas. Por exemplo, a tag <code>&lt;p&gt;</code> é usada para definir um parágrafo, e seu conteúdo ficará entre <code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code>.</p>
+    <p>Existem diversos tipos de tags, e cada uma tem sua importância. Algumas das que aprendi incluem:</p>
+    <ul>
+        <li><strong>&lt;h1&gt; até &lt;h6&gt;</strong>: usadas para definir títulos e subtítulos, organizando a hierarquia do conteúdo.</li>
+        <li><strong>&lt;p&gt;</strong>: usada para definir parágrafos de texto.</li>
+        <li><strong>&lt;strong&gt;</strong>: enfatiza fortemente um conteúdo, geralmente exibido em negrito.</li>
+        <li><strong>&lt;em&gt;</strong>: dá ênfase ao texto, geralmente em itálico.</li
+        <li><strong>&lt;a&gt;</strong>: cria links para outras páginas ou recursos.</li>
+        <li><strong>&lt;img&gt;</strong>: insere imagens na página.</li>
+        <li><strong>&lt;ul&gt; e &lt;ol&gt;</strong>: criam listas, sendo <i>ul</i> não ordenada e <i>ol</i> ordenada.</li>
+        <li><strong>&lt;li&gt;</strong>: define um item dentro de uma lista.</li>
+        <li><strong>&lt;blockquote&gt;</strong>: destaca citações longas.</li>
+        <li><strong>&lt;abbr&gt;</strong>: define uma abreviação ou sigla com descrição ao passar o mouse.</li>
+        <li><strong>&lt;mark&gt;</strong>: destaca partes importantes do texto.</li>
+        <li><strong>&lt;del&gt;</strong>: indica que o texto foi removido.</li>
+        <li><strong>&lt;sup&gt;</strong>: define texto sobrescrito (como em fórmulas).</li>
+        <li><strong>&lt;sub&gt;</strong>: define texto subscrito (como em notações químicas).</li>
+        <li><strong>&lt;hr&gt;</strong>: insere uma linha horizontal para dividir seções.</li>
+    </ul>
+  <p>Além dessas, existem muitas outras tags que ainda estou explorando. Algumas já caíram em desuso, como a <code>&lt;font&gt;</code>, que era usada para definir estilos de fonte diretamente no HTML, algo que hoje é feito via CSS. Mesmo assim, conhecer essas tags me ajuda a compreender como a web evoluiu e como podemos criar páginas mais limpas, acessíveis e organizadas.</p>
+        <small><a href="#inicio">(voltar)</a></small>
+
+    <h2 id="midias">MÍDIAS NO HTML</i>?</h2>
+    <p><section>
+<blockquote>
+    <p><i>Descobri que uma das funcionalidades mais interessantes e versáteis dessa linguagem é a capacidade de incorporar mídias diretamente nas páginas. As mídias, como imagens, áudios, vídeos e até conteúdos de outras páginas, tornam a experiência do usuário muito mais interativa, dinâmica e visual.</i></p>
+</blockquote>
+    <h3>Imagens com <code>&lt;img&gt;</code></h3>
+    <p>Começando pelas imagens, o HTML utiliza a tag <code>&lt;img&gt;</code> para inseri-las. Ela é uma tag auto fechável, ou seja, não precisa de uma tag de fechamento. Os dois principais atributos são:</p>
+    <ul>
+    <li><strong>src</strong>: indica o caminho da imagem (pode ser local ou da internet).</li>
+    <li><strong>alt</strong>: fornece um texto alternativo, essencial para acessibilidade e para os casos em que a imagem não é carregada.</li>
+  </ul>
+  <p><strong>Exemplo:</strong></p>
+  <img src="Img01.png" alt="Paisagem com montanhas e lago ao fundo" width="300">
+  
+  <h3>Áudios com <code>&lt;audio&gt;</code></h3>
+  <p>Para adicionar sons e músicas, usamos a tag <code>&lt;audio&gt;</code>, que deve conter um ou mais arquivos de áudio, geralmente indicados pela tag <code>&lt;source&gt;</code>. Essa tag pode ter atributos como:</p>
+  <ul>
+    <li><strong>controls</strong>: exibe os controles (play, pause, volume).</li>
+    <li><strong>autoplay</strong>: inicia o áudio automaticamente.</li>
+    <li><strong>loop</strong>: reinicia automaticamente ao fim.</li>
+    <li><strong>muted</strong>: começa o áudio sem som.</li>
+  </ul>
+  <p><strong>Exemplo:</strong></p>
+  <audio controls>
+    <source src="audio/musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML.
+  </audio>
+  
+  <h3>Vídeos com <code>&lt;video&gt;</code></h3>
+  <p>A exibição de vídeos também é simples com HTML, utilizando a tag <code>&lt;video&gt;</code>, que segue a mesma lógica do <code>&lt;audio&gt;</code>. É possível definir o tamanho do player com os atributos <code>width</code> e <code>height</code>, além de utilizar os mesmos controles.</p>
+  <video controls width="320" height="240">
+    <source src="video (1).mp4" type="video/mp4">
+    Seu navegador não suporta vídeo HTML.
+  </video>
+  
+  <h3>Legendas com <code>&lt;track&gt;</code></h3>
+  <p>Uma funcionalidade muito importante para acessibilidade é a possibilidade de adicionar legendas, descrições ou traduções a vídeos, usando a tag <code>&lt;track&gt;</code>. Ela é inserida dentro do <code>&lt;video&gt;</code> e possui alguns atributos importantes:</p>
+  <ul>
+    <li><strong>kind</strong>: define o tipo de faixa (subtitles, captions, descriptions, etc.).</li>
+    <li><strong>src</strong>: caminho do arquivo .vtt contendo as legendas.</li>
+    <li><strong>srclang</strong>: idioma das legendas.</li>
+    <li><strong>label</strong>: título que aparece para o usuário.</li>
+  </ul>
+  <p>Esse recurso garante que pessoas com deficiência auditiva, ou que estejam em ambientes sem som, possam entender o conteúdo.</p>
+  
+  <h3>Incorporando conteúdos externos com <code>&lt;iframe&gt;</code></h3>
+  <p>Com a tag <code>&lt;iframe&gt;</code>, é possível embutir vídeos de plataformas como YouTube, mapas do Google Maps e até sites inteiros. Isso amplia muito as possibilidades do HTML.</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.22916700613!2d-46.612393355790424!3d-23.585374603613364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5be650476023%3A0x2c33390e6e3805b1!2sMuseu%20do%20Ipiranga!5e0!3m2!1spt-BR!2sbr!4v1752861203093!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <h3>Compatibilidade e boas práticas</h3>
+  <p>É importante lembrar que nem todos os navegadores suportam os mesmos formatos de áudio e vídeo. Por isso, é comum usar múltiplas fontes com diferentes extensões (<i>.mp4</i>, <i>.ogg</i>, <i>.webm</i> para vídeos ou <i>.mp3</i>, <i>.ogg</i>, <i>.wav</i> para áudios), garantindo que o conteúdo funcione corretamente em todos os dispositivos.</p>
+  <p>Além disso, o uso de <strong>texto alternativo</strong>, <strong>legendas</strong>, <strong>descrições</strong> e o cuidado com o <u>peso dos arquivos de mídia</u> são boas práticas essenciais para que o site seja mais acessível, responsivo e rápido.</p>
+</section>
+    <small><a href="#inicio">(voltar)</a></small>
+
+    <h2 id="tabelas">TABELAS NO HTML</h2>
+    <blockquote>
+    <p><i>As tabelas no HTML são usadas para <strong>organizar dados de forma tabular</strong>, ou seja, em <em>linhas e colunas</em>, facilitando a visualização e o entendimento das informações.</i></p>
+    </blockquote>
+    <h3>Principais Tags de Tabelas</h3>
+  <ul>
+    <li><code>&lt;table&gt;</code>: define o início da tabela.</li>
+    <li><code>&lt;tr&gt;</code>: representa uma linha da tabela (<em>table row</em>).</li>
+    <li><code>&lt;th&gt;</code>: define um cabeçalho da tabela (<em>table header</em>).</li>
+    <li><code>&lt;td&gt;</code>: representa uma célula de dado comum (<em>table data</em>).</li>
+  </ul>
+  <h3>Exemplo de Tabela Simples</h3>
+  <table border="1" cellpadding="8" cellspacing="0">
+  <caption><strong>Tabela de Tags HTML</strong></caption>
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Função</th>
+      <th>Exemplo de Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;html&gt;</td>
+      <td>Define o início do documento HTML</td>
+      <td>&lt;html&gt;...&lt;/html&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;head&gt;</td>
+      <td>Contém metadados e links externos</td>
+      <td>&lt;head&gt;...&lt;/head&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;title&gt;</td>
+      <td>Define o título da página (mostrado na aba do navegador)</td>
+      <td>&lt;title&gt;Minha Página&lt;/title&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;body&gt;</td>
+      <td>Contém todo o conteúdo visível da página</td>
+      <td>&lt;body&gt;...&lt;/body&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;h1&gt; até &lt;h6&gt;</td>
+      <td>Títulos de diferentes níveis</td>
+      <td>&lt;h1&gt;Título Principal&lt;/h1&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;p&gt;</td>
+      <td>Define um parágrafo</td>
+      <td>&lt;p&gt;Texto aqui.&lt;/p&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;a&gt;</td>
+      <td>Cria um link</td>
+      <td>&lt;a href="https://exemplo.com"&gt;Clique aqui&lt;/a&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;img&gt;</td>
+      <td>Exibe uma imagem</td>
+      <td>&lt;img src="imagem.jpg" alt="Descrição"&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;ul&gt;</td>
+      <td>Lista não ordenada (com marcadores)</td>
+      <td>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;ol&gt;</td>
+      <td>Lista ordenada (numerada)</td>
+      <td>&lt;ol&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ol&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;li&gt;</td>
+      <td>Item de uma lista (ul ou ol)</td>
+      <td>&lt;li&gt;Primeiro item&lt;/li&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;div&gt;</td>
+      <td>Bloco genérico para agrupar conteúdos</td>
+      <td>&lt;div&gt;Conteúdo&lt;/div&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;span&gt;</td>
+      <td>Usado para estilizar partes do texto inline</td>
+      <td>&lt;span style="color:red"&gt;Vermelho&lt;/span&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;br&gt;</td>
+      <td>Quebra de linha</td>
+      <td>Texto&lt;br&gt;Nova linha</td>
+    </tr>
+    <tr>
+      <td>&lt;input&gt;</td>
+      <td>Campo de entrada de dados</td>
+      <td>&lt;input type="text"&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h3>Outras Tags e Recursos Avançados</h3>
+  <p>
+    Existem também outras tags úteis para tabelas:
+  </p>
+  <ul>
+    <li><code>&lt;caption&gt;</code>: adiciona um título à tabela.</li>
+    <li><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> e <code>&lt;tfoot&gt;</code>: organizam o conteúdo em seções.</li>
+    <li><code>colspan</code> e <code>rowspan</code>: fazem uma célula ocupar múltiplas colunas ou linhas.</li>
+  </ul>
+
+  <h3>Estilizando Tabelas com CSS</h3>
+  <p>
+    O HTML puro não define o estilo visual da tabela. Para personalizá-la, usamos CSS. É possível definir:
+  </p>
+  <ul>
+    <li>Bordas e espaçamentos</li>
+    <li>Cores alternadas entre linhas</li>
+    <li>Largura das colunas</li>
+    <li>Alinhamento do texto</li>
+  </ul>
+  <h3>Boas Práticas</h3>
+  <p>Tabelas devem ser usadas apenas quando o conteúdo exige estrutura tabular. Para layout de página, utilize <strong>CSS Grid</strong> ou <strong>Flexbox</strong>.</p>
+    <small><a href="#inicio">(voltar)</a></small>
+    
+<hr>
+    <h2 id="links">LINKS DE REFERÊNCIAS</h2>
+<ul>
+  <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Documentação e Tutoriais HTML</a></li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+  <li><a href="https://www.dio.me/" target="_blank">DIO - Digital Innovation One</a></li>
+  <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - HTML Guide</a></li>
+  <li><a href="https://htmlreference.io/" target="_blank">HTML Reference</a></li>
+</ul>
+    <small><a href="#inicio">(voltar)</a></small>
+    
+<footer style="background-color:#1f1f1f; color:white; text-align:center; padding:20px; margin-top:40px;">
+  <p>&copy; 2025 - Todos os direitos reservados.</p>
+  <p>Desenvolvido por Camile Miranda durante os estudos em <a href="https://www.dio.me/" target="_blank" style="color:#00ffff;">DIO</a></p>
+  <p style="margin-top:10px; font-style:italic;">"Cada linha de código é um passo rumo ao futuro."</p>
+</footer>
+
+</body>
+</html>
